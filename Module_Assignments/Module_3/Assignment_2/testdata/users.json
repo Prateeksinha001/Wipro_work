@@ -1,0 +1,5 @@
+[
+  { "name": "Alice",   "job": "Engineer",    "expected_status": 201 },
+  { "name": "Bob",     "job": "QA Analyst",  "expected_status": 201 },
+  { "name": "Charlie", "job": "Product Mgr", "expected_status": 201 }
+]

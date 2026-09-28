@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.7 on linux)" generated="2026-09-25T12:48:04.362963" rpa="false" schemaversion="5">
+<suite id="s1" name="01 Basic Syntax" source="/home/soumya/Documents/Abhinandan_Task/Assignment_4/tests/01_basic_syntax.robot">
+<test id="s1-t1" name="Open Browser And Navigate To A Specific URL" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-25T12:48:04.542273" level="INFO">Opening browser 'chrome' to base url 'https://tutorialsninja.com/demo/index.php?route=account/login'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-25T12:48:04.542030" elapsed="8.285523"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-09-25T12:48:12.837764" level="INFO">Page title is 'Account Login'.</msg>
+<arg>Account Login</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-09-25T12:48:12.828191" elapsed="0.009757"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-25T12:48:12.838542" elapsed="0.054936"/>
+</kw>
+<doc>Opens a browser and navigates to the login page URL.</doc>
+<tag>basic-syntax</tag>
+<status status="PASS" start="2026-09-25T12:48:04.541222" elapsed="8.352383"/>
+</test>
+<test id="s1-t2" name="Fill In A Form Field Using Input Text" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-25T12:48:12.894459" level="INFO">Opening browser 'chrome' to base url 'https://tutorialsninja.com/demo/index.php?route=account/login'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-25T12:48:12.894263" elapsed="1.602261"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-25T12:48:14.497480" level="INFO">Typing text 'testuser@example.com' into text field 'id:input-email'.</msg>
+<arg>id:input-email</arg>
+<arg>testuser@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-25T12:48:14.496835" elapsed="0.065984"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-25T12:48:14.563113" elapsed="0.054892"/>
+</kw>
+<doc>Demonstrates the "Input Text" keyword filling a form field.</doc>
+<tag>basic-syntax</tag>
+<status status="PASS" start="2026-09-25T12:48:12.893855" elapsed="1.724318"/>
+</test>
+<test id="s1-t3" name="Verify Presence Of A Specific Element" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-25T12:48:14.619494" level="INFO">Opening browser 'chrome' to base url 'https://tutorialsninja.com/demo/index.php?route=account/login'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-25T12:48:14.619248" elapsed="1.547564"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-25T12:48:16.174377" level="INFO">Current page contains element 'id:input-password'.</msg>
+<arg>id:input-password</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-25T12:48:16.167128" elapsed="0.007359"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-25T12:48:16.174789" elapsed="0.056405"/>
+</kw>
+<doc>Demonstrates "Page Should Contain Element" to confirm
+an element exists on the page.</doc>
+<tag>basic-syntax</tag>
+<status status="PASS" start="2026-09-25T12:48:14.618559" elapsed="1.612820"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-25T12:48:16.232062" elapsed="0.000202"/>
+</kw>
+<doc>Section 1: Basic Syntax and Keywords</doc>
+<status status="PASS" start="2026-09-25T12:48:04.363748" elapsed="11.868589"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">basic-syntax</stat>
+</tag>
+<suite>
+<stat name="01 Basic Syntax" id="s1" pass="3" fail="0" skip="0">01 Basic Syntax</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

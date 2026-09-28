@@ -1,0 +1,4 @@
+email,password,expected_result
+you@example.com,YourPass123,success
+you@example.com,WrongPassword,failure
+,YourPass123,failure
